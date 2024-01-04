@@ -4,27 +4,27 @@
  *  to have children until they have at least one child of each gender.
  */
 public class OneOfEach {
-	public static void main (String[] args) {
-		boolean g = false;
-		boolean b = false;
-		int count = 0;
+   	public static void main (String[] args) {
 
-		while ( g == false || b == false) {
-		 	if ( (Math.random() ) < 0.5 ){
-		 		g = true;
-		 		System.out.print( "g ");
-		 	}
-		 	else {
-		 		b = true;
-		 		System.out.print( "b ");
-		 	}
-		 	count ++;		 		
-		 }
+   		int children = 0;
+   		boolean boy = false; 
+   		boolean girl = false;
 
-		System.out.println( " You made it... and you now have " + count + "children.");
+   		while(!boy || !girl) { 
+   			
+   double random = Math.random();
+   		if (random <= 0.5) {
+   			boy = true;
+   			System.out.print("b "); 
+   		}
+   		else {
+   			girl = true;
+   			System.out.print("g ");
+   		}
+children++;
+ }
+ System.out.println( "You made it... " + " and you now have " + children + " children" );
 
-
-
-	}
+         
+     }
 }
-		
