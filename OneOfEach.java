@@ -5,17 +5,17 @@
  */
 public class OneOfEach {
 	public static void main (String[] args) {
-		boolean g = false;
-		boolean b = false;
+		boolean girl = false;
+		boolean boy = false;
 		int count = 0;
 
-		while ( g == false || b == false) {
+		while ( girl == false || boy == false) {
 		 	if ( (Math.random() ) < 0.5 ){
-		 		g = true;
+		 		girl = true;
 		 		System.out.print( "g ");
 		 	}
 		 	else {
-		 		b = true;
+		 		boy = true;
 		 		System.out.print( "b ");
 		 	}
 		 	count ++;		 		
