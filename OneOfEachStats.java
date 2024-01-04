@@ -12,17 +12,17 @@ public class OneOfEachStats {
 		int two = 0;
 		int three = 0;
 		int fourMore = 0;
-		boolean g = false;
-		boolean b = false;
+		boolean girl = false;
+		boolean boy = false;
 		int count = 0;
 
 		for( int i = 1; i <= t; i++){
-			while ( g == false || b == false) {
+			while ( girl == false || boy == false) {
 
 				if ( ( generator.nextDouble() ) < 0.5 )
-					g = true;
+					girl = true;
 		 	    else
-		 	    	b = true;
+		 	    	boy = true;
 
 		 	    count ++;
 		 	}
@@ -38,8 +38,8 @@ public class OneOfEachStats {
 
 
 		 	count = 0;
-		 	g = false;
-		 	b = false;
+		 	girl = false;
+		 	boy = false;
 		 
 		}
 
