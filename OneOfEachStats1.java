@@ -6,7 +6,6 @@
  */
 public class OneOfEachStats1 {
 	public static void main (String[] args) {
-
 		int t = Integer.parseInt(args[0]);
 		double sum = 0;
 		int two = 0;
